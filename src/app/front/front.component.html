@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-md-12">
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <input type="text" #usNm>
+    <input type="password" #pass>
+    <input class="btn btn-primary" type="button" value="Login" (click)="goProfile(usNm.value,pass.value)">
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <a [routerLink]="['forgot', 'codekul']">Forgot Password</a>
+    </div>
+  </div>
