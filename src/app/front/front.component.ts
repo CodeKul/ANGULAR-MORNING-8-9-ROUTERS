@@ -16,8 +16,6 @@ export class FrontComponent implements OnInit {
   }
 
   goProfile(usNm: string, pass: string) {
-    if (usNm === 'codekul' && pass === 'codekul') {
-      this.router.navigate(['back', usNm]);
-    }
+    this.router.navigate(['back', usNm]);
   }
 }

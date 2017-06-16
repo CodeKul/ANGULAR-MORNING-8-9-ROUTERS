@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {RouterStateSnapShot} from '@angular/router'
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-back',
@@ -8,11 +8,18 @@ import {RouterStateSnapShot} from '@angular/router'
 })
 export class BackComponent implements OnInit {
 
+  usNm: string;
   constructor(
-    private snap : RouterStateSnapShot
+    private router: Router,
+    private snap: ActivatedRoute
   ) { }
 
   ngOnInit() {
-  }
+    //this.usNm = this.snap.snapshot.params['usNm'];
 
+    this.snap.params.subscribe(params => this.usNm = params['usNm']);
+  }
+  callMe(nm: string) {
+    this.router.navigate(['back', nm]);
+  }
 }

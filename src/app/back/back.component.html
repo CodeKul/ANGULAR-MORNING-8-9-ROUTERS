@@ -1,5 +1,10 @@
 <div class="row">
   <div class="col-md-12">
-    Welcome {{usNm}}
+    <h1>Welcome {{usNm}}</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <input type="text" #uNm> <input type="button" (click)="callMe(uNm.value)" value="Okay" class="btn btn-danger" />
   </div>
 </div>
