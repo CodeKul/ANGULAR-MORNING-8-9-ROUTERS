@@ -1,0 +1,28 @@
+{
+    "keyString": "value",
+    "keyNum": 123,
+    "xyz": 78.96,
+    "adds": [
+        "Pune",
+        "Sangli",
+        "Mumbai"
+    ],
+    "mouse": {
+        "cost": 1234,
+        "name": "headphones"
+    },
+    "devices": [
+        {
+            "cost": 1234,
+            "name": "headphones"
+        },
+        {
+            "cost": 1234,
+            "name": "headphones"
+        },
+        {
+            "cost": 1234,
+            "name": "headphones"
+        }
+    ]
+}

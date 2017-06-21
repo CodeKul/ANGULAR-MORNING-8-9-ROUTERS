@@ -16,6 +16,10 @@ export class FrontComponent implements OnInit {
   }
 
   goProfile(usNm: string, pass: string) {
-    this.router.navigate(['back', usNm]);
+    this.router.navigate(['back', usNm], {
+      queryParams: {
+        key: 'value'
+      }
+    });
   }
 }

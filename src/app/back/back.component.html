@@ -1,3 +1,4 @@
+
 <div class="row">
   <div class="col-md-12">
     <h1>Welcome {{usNm}}</h1>
@@ -5,6 +6,24 @@
 </div>
 <div class="row">
   <div class="col-md-12">
+    <h1>Query Params {{qParam}}</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
     <input type="text" #uNm> <input type="button" (click)="callMe(uNm.value)" value="Okay" class="btn btn-danger" />
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-6">
+    <a [routerLink]="['profile']" [routerLinkActive]="'link'">Profile</a>
+  </div>
+   <div class="col-md-6">
+    <a [routerLink]="['log']" [routerLinkActive]="'link'">Logs</a>
   </div>
 </div>

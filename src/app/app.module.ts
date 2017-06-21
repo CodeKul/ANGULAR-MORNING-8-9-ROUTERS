@@ -8,13 +8,21 @@ import { AppComponent } from './app.component';
 import { FrontComponent } from './front/front.component';
 import { BackComponent } from './back/back.component';
 import { ForgetPasswordComponent } from './forget-password/forget-password.component';
+import { ProfileComponent } from './back/profile.component';
+import { LogComponent } from './back/log.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FrontComponent,
     BackComponent,
-    ForgetPasswordComponent
+    ForgetPasswordComponent,
+    ProfileComponent,
+    LogComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
